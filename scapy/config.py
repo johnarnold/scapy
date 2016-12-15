@@ -334,6 +334,7 @@ contribs: a dict which can be used by contrib layers to store local configuratio
     checkIPID = 0
     checkIPsrc = 1
     checkIPaddr = 1
+    checkIPinIP = True
     check_TCPerror_seqack = 0
     verb = 2
     prompt = ">>> "
