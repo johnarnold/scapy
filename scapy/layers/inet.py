@@ -413,7 +413,7 @@ class IP(Packet, IPTools):
     def answers(self, other):
         if not isinstance(other,IP):
             return 0
-	if not conf.checkIPinIP: #IPIP
+	elif not conf.checkIPinIP: #IPIP
 	    if self.proto == 4:
 	        return self.payload.answers(other)
 	    if other.proto == 4:
